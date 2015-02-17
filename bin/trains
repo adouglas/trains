@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var path = require('path');
+var log = require('verbalize');
+var argv = require('minimist')(process.argv.slice(1));
+
+
+/**
+ * Everything in the file should be customized
+ */
+
+
+// Verbalize `runner`
+log.runner = 'trains';
+
+// Use `-f` or `--file` to specify the source file
+var input  = argv._[0];
+
+if (!input) {
+  log.error('Please provide required setup data (see readme.md)');
+}
+
+
+/**
+ * Application
+ */
+
+// If all is well, log a success message.
+log.success('  ' + log.runner + ' [done]');

@@ -1,0 +1,42 @@
+{
+  "name": "trains",
+  "description": "Node.js answer to ThoughtWorks technical assignment (Problem one: Trains)",
+  "version": "0.1.0",
+  "homepage": "https://github.com/adouglas/trains",
+  "author": {
+    "name": "Andrew Douglas",
+    "url": "https://github.com/adouglas"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/adouglas/trains.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adouglas/trains/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/adouglas/trains/blob/master/LICENSE-MIT"
+    }
+  ],
+  "keywords": [
+    "cli",
+    "command line"
+  ],
+  "preferGlobal": true,
+  "bin": {
+    "trains": "./bin/trains"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "scripts": {
+    "test": "mocha -R test"
+  },
+  "dependencies": {
+    "minimist": "~0.0.8",
+    "verbalize": "~0.1.1"
+  }
+}
